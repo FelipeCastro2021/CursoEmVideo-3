@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posições no background</title>
+    <style>
+      div.block {
+        height: 200px;
+        border: 3px solid lightgray;
+
+        margin: 1rem;
+        border-radius: 1rem;
+
+        background-image: url('images/wallpaper003.jpg');
+      }
+
+      div.block#i2 {
+        background-position: top right;
+      }
+
+      div.block#i3 {
+        background-position: bottom right;
+      }
+
+      div.block#i4 {
+        background-position: bottom left;
+      }
+
+      div.block#i5 {
+        background-position: center;
+      }
+
+      div.block#i6 {
+        background-position: left center;
+      }
+
+      div.complete {
+        height: 50rem;
+        width: 92vw;
+
+        background-image: url('images/wallpaper005.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        border: 1px solid black;
+
+        border-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block" id="i1"></div>
+    <div class="block" id="i2"></div>
+    <div class="block" id="i3"></div>
+    <div class="block" id="i4"></div>
+    <div class="block" id="i5"></div>
+    <div class="block" id="i6"></div>
+
+    <div class="complete"></div>
+  </body>
+</html>
