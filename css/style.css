@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+:root {
+  --general-text: Verdana, Geneva, tahoma, sans-serif;
+  --title: 'Passion One', cursive;
+  --text: 'Sriracha', cursive;
+}
+
 /* RESET */
 * {
   margin: 0;
@@ -10,6 +16,8 @@
 body {
   min-height: 100vh;
   background-color: darkgray;
+
+  font-family: var(--general-text);
 }
 
 header {
@@ -22,6 +30,9 @@ header > h1 {
   padding-top: 50px;
   /* text-transform: uppercase; */
   font-variant: small-caps;
+
+  font-family: var(--title);
+  font-size: 10vw;
 }
 
 header > p {
@@ -47,30 +58,35 @@ p {
 /* CONTENT */
 section {
   padding: 10vh 0;
+
+  line-height: 2em;
+  padding-left: 30px;
+
+  font-family: var(--text);
+  font-size: 3.6vw;
 }
 
 section.normal {
   background-color: #fff;
   color: #000;
-
-  line-height: 2em;
-  padding-left: 30px;
 }
 
 section.imagem {
   background-color: rgb(51, 51, 51);
-  color: #000;
+  color: #fff;
 }
 
 section.imagem > p {
   background-color: rgba(0, 0, 0, 0.256);
-  width: 400px;
+  padding: 5px;
+
+  display: inline-block;
 }
 
 /* FOOTER */
 footer {
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
 
   text-align: center;
   padding: 10px;
