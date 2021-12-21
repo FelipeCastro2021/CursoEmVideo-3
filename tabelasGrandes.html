@@ -38,6 +38,16 @@
         color: rgb(148, 148, 148);
       }
 
+      caption {
+        background-color: rgb(157, 157, 157);
+        color: #fafafa;
+
+        font-weight: bold;
+        font-size: 1.3rem;
+
+        padding: 0.5rem;
+      }
+
       thead th,
       tfoot th,
       tfoot td {
@@ -48,18 +58,29 @@
       table tr td:nth-child(2) {
         text-align: right;
       }
+
+      /* nth-child(even) | nth-child(odd) ou nth-child (2n - 1)*/
+      table tbody tr:nth-child(2n) td {
+        background-color: rgb(148, 148, 148);
+        color: white;
+      }
     </style>
   </head>
   <body>
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+      <caption>
+        População dos estados brasileiros
+      </caption>
+
       <thead>
         <tr>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 50px">População</th>
         </tr>
       </thead>
+
       <tbody>
         <tr>
           <td>São Paulo</td>
@@ -170,6 +191,7 @@
           <td>652 713</td>
         </tr>
       </tbody>
+
       <tfoot>
         <tr>
           <th>Total de habitantes</th>
